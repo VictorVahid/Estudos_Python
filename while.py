@@ -1,12 +1,20 @@
 
 #While
-
 condicao = True
 
-while condicao:
-    nome = input('Qual o seu nome: ')
-    print(f'Seu nome é {nome} ')
-    if nome == 'sair':
-        break
+# while condicao:
+#     nome = input('Qual o seu nome: ')
+#     print(f'Seu nome é {nome} ')
+#     if nome == 'sair':
+#         break
 
-print('Acabou!')
+# print('Acabou!')
+
+contador = 0 
+
+while contador <= 10:
+    print(contador)
+    contador += 1
+    
+
+print('Acabou')
