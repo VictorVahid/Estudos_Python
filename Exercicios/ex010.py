@@ -9,14 +9,13 @@ while True:
     # Validação
     if len(entrada) > 1:
         print("Digite apenas uma letra.")
-        continue
+
     #Entrada Usuario
     if entrada == "i":
         os.system("cls")
         valor = input("Valor: ")
         lista.append(valor)
-        continue
-
+    
     if entrada == "a":
         print(lista)
         indice = int(input("Escolha o índice para apagar: "))
@@ -25,12 +24,10 @@ while True:
             print(f"O item {indice} foi removido.")
         except IndexError:
             print("Índice inválido. Tente novamente.")
-        continue
-    
+   
     if entrada == "l":
         for indice, nome in enumerate(lista):
             print(indice, nome)
-            continue
         
     # Saida
     if entrada == "s":
