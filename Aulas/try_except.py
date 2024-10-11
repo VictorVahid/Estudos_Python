@@ -1,17 +1,25 @@
+# Try, Except, else e finally
 
-"""
-Introdução ao try/except
+# try:
+#     a = 18
+#     b = 0
+#     c = a / b[0]
+# except ZeroDivisionError:
+#     print("Divisão por 0 \n")
+# except NameError:
+#     print("Nome b Não está definido")
+# except Exception as error:
+#     print("MSG: ", error)
+# print("Continuar")
 
-try  -> tenta executar o código
-except -> ocorreu algum erro ao tentar executar
-
-""" 
-
-numero_str = input('Digite um número: ')
 
 try:
-    numero_float = float(numero_str)
-    print('Float: ', numero_float)
-    print(f'O dobro de {numero_str} é {numero_float * 2}')
-except:
-    print('Isso não é um número!')
+    print("Abriu Arquivo!")
+    8/0
+except Exception as error:
+    print("Error: ", error)
+    print("Name: ", error.__class__.__name__)
+else:
+    print("NÃO DEU ERRO")
+finally:
+    print("Fechar Arquivo")
