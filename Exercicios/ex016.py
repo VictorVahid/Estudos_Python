@@ -33,3 +33,6 @@ produtosOrdenadosPreco = copy.deepcopy(produtos)
 # Ordene os produtos por preco crescente (do menor para maior)✅
 produtosOrdenadosPreco.sort(key=lambda x: x["preco"])
 print("\nOrdem preço: ", produtosOrdenadosPreco)
+
+
+print("LISTA ORIGINAL: ", produtos)
